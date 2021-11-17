@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		236BC6A42744B1CC003D9013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236BC6A32744B1CC003D9013 /* AppDelegate.swift */; };
 		236BC6A62744B1CC003D9013 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236BC6A52744B1CC003D9013 /* SceneDelegate.swift */; };
-		236BC6A82744B1CC003D9013 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236BC6A72744B1CC003D9013 /* ViewController.swift */; };
-		236BC6AB2744B1CC003D9013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 236BC6A92744B1CC003D9013 /* Main.storyboard */; };
+		236BC6A82744B1CC003D9013 /* OrdersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236BC6A72744B1CC003D9013 /* OrdersListViewController.swift */; };
+		236BC6AB2744B1CC003D9013 /* OrdersList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 236BC6A92744B1CC003D9013 /* OrdersList.storyboard */; };
 		236BC6AD2744B1CE003D9013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 236BC6AC2744B1CE003D9013 /* Assets.xcassets */; };
 		236BC6B02744B1CE003D9013 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 236BC6AE2744B1CE003D9013 /* LaunchScreen.storyboard */; };
 		236BC6B92744B26A003D9013 /* DataAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236BC6B82744B26A003D9013 /* DataAPI.swift */; };
@@ -20,14 +20,17 @@
 		236BC6C42744B5A5003D9013 /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236BC6C32744B5A5003D9013 /* UIColorExt.swift */; };
 		236BC6C62744BA9B003D9013 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236BC6C52744BA9B003D9013 /* HTTPMethod.swift */; };
 		236BC6C82744BAAD003D9013 /* DataAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236BC6C72744BAAD003D9013 /* DataAPIError.swift */; };
+		236BC6D32744D20E003D9013 /* TableInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236BC6D12744D20E003D9013 /* TableInfoCell.swift */; };
+		236BC6D42744D20E003D9013 /* TableInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 236BC6D22744D20E003D9013 /* TableInfoCell.xib */; };
+		236BC6D72744DA2A003D9013 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236BC6D62744DA2A003D9013 /* DataStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		236BC6A02744B1CC003D9013 /* PopinaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopinaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		236BC6A32744B1CC003D9013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		236BC6A52744B1CC003D9013 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		236BC6A72744B1CC003D9013 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		236BC6AA2744B1CC003D9013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		236BC6A72744B1CC003D9013 /* OrdersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersListViewController.swift; sourceTree = "<group>"; };
+		236BC6AA2744B1CC003D9013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/OrdersList.storyboard; sourceTree = "<group>"; };
 		236BC6AC2744B1CE003D9013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		236BC6AF2744B1CE003D9013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		236BC6B12744B1CE003D9013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -38,6 +41,9 @@
 		236BC6C32744B5A5003D9013 /* UIColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
 		236BC6C52744BA9B003D9013 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		236BC6C72744BAAD003D9013 /* DataAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAPIError.swift; sourceTree = "<group>"; };
+		236BC6D12744D20E003D9013 /* TableInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableInfoCell.swift; sourceTree = "<group>"; };
+		236BC6D22744D20E003D9013 /* TableInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableInfoCell.xib; sourceTree = "<group>"; };
+		236BC6D62744DA2A003D9013 /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,16 +76,16 @@
 		236BC6A22744B1CC003D9013 /* PopinaDemo */ = {
 			isa = PBXGroup;
 			children = (
-				236BC6C12744B57B003D9013 /* Common */,
+				236BC6D52744DA1B003D9013 /* Services */,
 				236BC6B12744B1CE003D9013 /* Info.plist */,
 				236BC6A32744B1CC003D9013 /* AppDelegate.swift */,
 				236BC6A52744B1CC003D9013 /* SceneDelegate.swift */,
-				236BC6A72744B1CC003D9013 /* ViewController.swift */,
 				236BC6AC2744B1CE003D9013 /* Assets.xcassets */,
+				236BC6C12744B57B003D9013 /* Common */,
 				236BC6AE2744B1CE003D9013 /* LaunchScreen.storyboard */,
-				236BC6A92744B1CC003D9013 /* Main.storyboard */,
 				236BC6BA2744B3F9003D9013 /* Models */,
 				236BC6B72744B252003D9013 /* Network */,
+				236BC6C92744CDDD003D9013 /* Scenes */,
 			);
 			path = PopinaDemo;
 			sourceTree = "<group>";
@@ -118,6 +124,57 @@
 				236BC6C32744B5A5003D9013 /* UIColorExt.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		236BC6C92744CDDD003D9013 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				236BC6D827450CB8003D9013 /* DetailedOrder */,
+				236BC6CA2744CDF3003D9013 /* OrdersList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		236BC6CA2744CDF3003D9013 /* OrdersList */ = {
+			isa = PBXGroup;
+			children = (
+				236BC6CB2744CF3A003D9013 /* Subviews */,
+				236BC6A72744B1CC003D9013 /* OrdersListViewController.swift */,
+				236BC6A92744B1CC003D9013 /* OrdersList.storyboard */,
+			);
+			path = OrdersList;
+			sourceTree = "<group>";
+		};
+		236BC6CB2744CF3A003D9013 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				236BC6CC2744CF42003D9013 /* TableInfoCell */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		236BC6CC2744CF42003D9013 /* TableInfoCell */ = {
+			isa = PBXGroup;
+			children = (
+				236BC6D12744D20E003D9013 /* TableInfoCell.swift */,
+				236BC6D22744D20E003D9013 /* TableInfoCell.xib */,
+			);
+			path = TableInfoCell;
+			sourceTree = "<group>";
+		};
+		236BC6D52744DA1B003D9013 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				236BC6D62744DA2A003D9013 /* DataStorage.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		236BC6D827450CB8003D9013 /* DetailedOrder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DetailedOrder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,9 +235,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				236BC6D42744D20E003D9013 /* TableInfoCell.xib in Resources */,
 				236BC6B02744B1CE003D9013 /* LaunchScreen.storyboard in Resources */,
 				236BC6AD2744B1CE003D9013 /* Assets.xcassets in Resources */,
-				236BC6AB2744B1CC003D9013 /* Main.storyboard in Resources */,
+				236BC6AB2744B1CC003D9013 /* OrdersList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,12 +252,14 @@
 				236BC6BE2744B4C5003D9013 /* Order.swift in Sources */,
 				236BC6C42744B5A5003D9013 /* UIColorExt.swift in Sources */,
 				236BC6B92744B26A003D9013 /* DataAPI.swift in Sources */,
-				236BC6A82744B1CC003D9013 /* ViewController.swift in Sources */,
+				236BC6D72744DA2A003D9013 /* DataStorage.swift in Sources */,
+				236BC6A82744B1CC003D9013 /* OrdersListViewController.swift in Sources */,
 				236BC6C02744B4F2003D9013 /* Till.swift in Sources */,
 				236BC6C82744BAAD003D9013 /* DataAPIError.swift in Sources */,
 				236BC6C62744BA9B003D9013 /* HTTPMethod.swift in Sources */,
 				236BC6A42744B1CC003D9013 /* AppDelegate.swift in Sources */,
 				236BC6A62744B1CC003D9013 /* SceneDelegate.swift in Sources */,
+				236BC6D32744D20E003D9013 /* TableInfoCell.swift in Sources */,
 				236BC6BC2744B49E003D9013 /* Dish.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,12 +267,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		236BC6A92744B1CC003D9013 /* Main.storyboard */ = {
+		236BC6A92744B1CC003D9013 /* OrdersList.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				236BC6AA2744B1CC003D9013 /* Base */,
 			);
-			name = Main.storyboard;
+			name = OrdersList.storyboard;
 			sourceTree = "<group>";
 		};
 		236BC6AE2744B1CE003D9013 /* LaunchScreen.storyboard */ = {
@@ -354,7 +414,7 @@
 				INFOPLIST_FILE = PopinaDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = OrdersList;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -383,7 +443,7 @@
 				INFOPLIST_FILE = PopinaDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = OrdersList;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

@@ -10,8 +10,6 @@ import Foundation
 
 final class DataAPI {
     private let initialURL: String
-    private let defaultSession = URLSession(configuration: .default)
-    private var dataTask: URLSessionDataTask?
     
     init(initialURL: String) {
         self.initialURL = initialURL
@@ -27,11 +25,10 @@ final class DataAPI {
             return
         }
         
-        dataTask?.cancel()
-        DispatchQueue.global().async { [weak self] in
+        DispatchQueue.global().async {
             var request = URLRequest(url: url)
             request.httpMethod = httpMethod.rawValue
-            self?.dataTask = self?.defaultSession.dataTask(with: request) { data, response, error in
+            let task = URLSession.shared.dataTask(with: request) { data, response, error in
                 if let error = error {
                     completion(.failure(error))
                     return
@@ -49,7 +46,7 @@ final class DataAPI {
                 
                 completion(.success(result))
             }
-            self?.dataTask?.resume()
+            task.resume()
         }
     }
 }
