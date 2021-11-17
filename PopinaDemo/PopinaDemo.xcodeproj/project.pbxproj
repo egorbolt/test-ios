@@ -18,6 +18,8 @@
 		236BC6BE2744B4C5003D9013 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236BC6BD2744B4C5003D9013 /* Order.swift */; };
 		236BC6C02744B4F2003D9013 /* Till.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236BC6BF2744B4F2003D9013 /* Till.swift */; };
 		236BC6C42744B5A5003D9013 /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236BC6C32744B5A5003D9013 /* UIColorExt.swift */; };
+		236BC6C62744BA9B003D9013 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236BC6C52744BA9B003D9013 /* HTTPMethod.swift */; };
+		236BC6C82744BAAD003D9013 /* DataAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236BC6C72744BAAD003D9013 /* DataAPIError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		236BC6BD2744B4C5003D9013 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		236BC6BF2744B4F2003D9013 /* Till.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Till.swift; sourceTree = "<group>"; };
 		236BC6C32744B5A5003D9013 /* UIColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
+		236BC6C52744BA9B003D9013 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		236BC6C72744BAAD003D9013 /* DataAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAPIError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				236BC6B82744B26A003D9013 /* DataAPI.swift */,
+				236BC6C52744BA9B003D9013 /* HTTPMethod.swift */,
+				236BC6C72744BAAD003D9013 /* DataAPIError.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -190,6 +196,8 @@
 				236BC6B92744B26A003D9013 /* DataAPI.swift in Sources */,
 				236BC6A82744B1CC003D9013 /* ViewController.swift in Sources */,
 				236BC6C02744B4F2003D9013 /* Till.swift in Sources */,
+				236BC6C82744BAAD003D9013 /* DataAPIError.swift in Sources */,
+				236BC6C62744BA9B003D9013 /* HTTPMethod.swift in Sources */,
 				236BC6A42744B1CC003D9013 /* AppDelegate.swift in Sources */,
 				236BC6A62744B1CC003D9013 /* SceneDelegate.swift in Sources */,
 				236BC6BC2744B49E003D9013 /* Dish.swift in Sources */,
