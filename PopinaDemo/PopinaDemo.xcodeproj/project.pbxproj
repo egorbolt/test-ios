@@ -100,6 +100,16 @@
 			path = Domain;
 			sourceTree = "<group>";
 		};
+		2363F19827462653006B7B19 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2363F19027461988006B7B19 /* JDCPopinaDemoInHouse.mobileprovision */,
+				236BC6AC2744B1CE003D9013 /* Assets.xcassets */,
+				236BC6AE2744B1CE003D9013 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		236BC6972744B1CC003D9013 = {
 			isa = PBXGroup;
 			children = (
@@ -119,16 +129,14 @@
 		236BC6A22744B1CC003D9013 /* PopinaDemo */ = {
 			isa = PBXGroup;
 			children = (
-				2363F19027461988006B7B19 /* JDCPopinaDemoInHouse.mobileprovision */,
 				236BC6B12744B1CE003D9013 /* Info.plist */,
 				236BC6A32744B1CC003D9013 /* AppDelegate.swift */,
 				236BC6A52744B1CC003D9013 /* SceneDelegate.swift */,
-				236BC6AC2744B1CE003D9013 /* Assets.xcassets */,
 				236BC6C12744B57B003D9013 /* Common */,
 				2363F19527462234006B7B19 /* Domain */,
-				236BC6AE2744B1CE003D9013 /* LaunchScreen.storyboard */,
 				236BC6BA2744B3F9003D9013 /* Models */,
 				236BC6B72744B252003D9013 /* Network */,
+				2363F19827462653006B7B19 /* Resources */,
 				236BC6C92744CDDD003D9013 /* Scenes */,
 			);
 			path = PopinaDemo;
