@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2363F18227451E3D006B7B19 /* DetailedOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2363F18027451E3D006B7B19 /* DetailedOrderViewController.swift */; };
+		2363F18327451E3D006B7B19 /* DetailedOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2363F18127451E3D006B7B19 /* DetailedOrderViewController.xib */; };
+		2363F18A2745484C006B7B19 /* DishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2363F1882745484C006B7B19 /* DishCell.swift */; };
+		2363F18B2745484C006B7B19 /* DishCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2363F1892745484C006B7B19 /* DishCell.xib */; };
+		2363F18E2745485C006B7B19 /* GeneralInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2363F18C2745485C006B7B19 /* GeneralInfoCell.swift */; };
+		2363F18F2745485C006B7B19 /* GeneralInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2363F18D2745485C006B7B19 /* GeneralInfoCell.xib */; };
 		236BC6A42744B1CC003D9013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236BC6A32744B1CC003D9013 /* AppDelegate.swift */; };
 		236BC6A62744B1CC003D9013 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236BC6A52744B1CC003D9013 /* SceneDelegate.swift */; };
 		236BC6A82744B1CC003D9013 /* OrdersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236BC6A72744B1CC003D9013 /* OrdersListViewController.swift */; };
@@ -26,6 +32,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2363F18027451E3D006B7B19 /* DetailedOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedOrderViewController.swift; sourceTree = "<group>"; };
+		2363F18127451E3D006B7B19 /* DetailedOrderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailedOrderViewController.xib; sourceTree = "<group>"; };
+		2363F1882745484C006B7B19 /* DishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCell.swift; sourceTree = "<group>"; };
+		2363F1892745484C006B7B19 /* DishCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishCell.xib; sourceTree = "<group>"; };
+		2363F18C2745485C006B7B19 /* GeneralInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralInfoCell.swift; sourceTree = "<group>"; };
+		2363F18D2745485C006B7B19 /* GeneralInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralInfoCell.xib; sourceTree = "<group>"; };
 		236BC6A02744B1CC003D9013 /* PopinaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopinaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		236BC6A32744B1CC003D9013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		236BC6A52744B1CC003D9013 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +69,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2363F18427454806006B7B19 /* GeneralInfoCell */ = {
+			isa = PBXGroup;
+			children = (
+				2363F18C2745485C006B7B19 /* GeneralInfoCell.swift */,
+				2363F18D2745485C006B7B19 /* GeneralInfoCell.xib */,
+			);
+			path = GeneralInfoCell;
+			sourceTree = "<group>";
+		};
+		2363F18527454812006B7B19 /* DishCell */ = {
+			isa = PBXGroup;
+			children = (
+				2363F1882745484C006B7B19 /* DishCell.swift */,
+				2363F1892745484C006B7B19 /* DishCell.xib */,
+			);
+			path = DishCell;
+			sourceTree = "<group>";
+		};
 		236BC6972744B1CC003D9013 = {
 			isa = PBXGroup;
 			children = (
@@ -138,9 +168,9 @@
 		236BC6CA2744CDF3003D9013 /* OrdersList */ = {
 			isa = PBXGroup;
 			children = (
-				236BC6CB2744CF3A003D9013 /* Subviews */,
 				236BC6A72744B1CC003D9013 /* OrdersListViewController.swift */,
 				236BC6A92744B1CC003D9013 /* OrdersList.storyboard */,
+				236BC6CB2744CF3A003D9013 /* Subviews */,
 			);
 			path = OrdersList;
 			sourceTree = "<group>";
@@ -173,6 +203,10 @@
 		236BC6D827450CB8003D9013 /* DetailedOrder */ = {
 			isa = PBXGroup;
 			children = (
+				2363F18027451E3D006B7B19 /* DetailedOrderViewController.swift */,
+				2363F18127451E3D006B7B19 /* DetailedOrderViewController.xib */,
+				2363F18527454812006B7B19 /* DishCell */,
+				2363F18427454806006B7B19 /* GeneralInfoCell */,
 			);
 			path = DetailedOrder;
 			sourceTree = "<group>";
@@ -236,7 +270,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				236BC6D42744D20E003D9013 /* TableInfoCell.xib in Resources */,
+				2363F18327451E3D006B7B19 /* DetailedOrderViewController.xib in Resources */,
 				236BC6B02744B1CE003D9013 /* LaunchScreen.storyboard in Resources */,
+				2363F18B2745484C006B7B19 /* DishCell.xib in Resources */,
+				2363F18F2745485C006B7B19 /* GeneralInfoCell.xib in Resources */,
 				236BC6AD2744B1CE003D9013 /* Assets.xcassets in Resources */,
 				236BC6AB2744B1CC003D9013 /* OrdersList.storyboard in Resources */,
 			);
@@ -254,11 +291,14 @@
 				236BC6B92744B26A003D9013 /* DataAPI.swift in Sources */,
 				236BC6D72744DA2A003D9013 /* DataStorage.swift in Sources */,
 				236BC6A82744B1CC003D9013 /* OrdersListViewController.swift in Sources */,
+				2363F18A2745484C006B7B19 /* DishCell.swift in Sources */,
 				236BC6C02744B4F2003D9013 /* Till.swift in Sources */,
 				236BC6C82744BAAD003D9013 /* DataAPIError.swift in Sources */,
 				236BC6C62744BA9B003D9013 /* HTTPMethod.swift in Sources */,
 				236BC6A42744B1CC003D9013 /* AppDelegate.swift in Sources */,
+				2363F18E2745485C006B7B19 /* GeneralInfoCell.swift in Sources */,
 				236BC6A62744B1CC003D9013 /* SceneDelegate.swift in Sources */,
+				2363F18227451E3D006B7B19 /* DetailedOrderViewController.swift in Sources */,
 				236BC6D32744D20E003D9013 /* TableInfoCell.swift in Sources */,
 				236BC6BC2744B49E003D9013 /* Dish.swift in Sources */,
 			);

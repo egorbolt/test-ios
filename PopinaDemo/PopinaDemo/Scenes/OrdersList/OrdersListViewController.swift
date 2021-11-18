@@ -85,6 +85,8 @@ extension OrdersListViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        <#code#>
+        let vc = DetailedOrderViewController()
+        vc.configure(with: orders[indexPath.row])
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

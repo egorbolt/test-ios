@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="143" id="KGk-i7-Jjw" customClass="GeneralInfoCell" customModule="PopinaDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="143"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="143"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="U5D-ez-UlH" userLabel="Content Stack View">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="139"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FqB-vm-9uk" userLabel="Dishes Count Label">
+                                <rect key="frame" x="0.0" y="59.5" width="158" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rbt-L2-WYr" userLabel="Vertical Divider View">
+                                <rect key="frame" x="158" y="37.5" width="4" height="64"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="3yd-5c-SHy"/>
+                                    <constraint firstAttribute="width" constant="4" id="vtf-HY-To7"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xoe-gW-QEA" userLabel="Price Label">
+                                <rect key="frame" x="162" y="59.5" width="158" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="FqB-vm-9uk" firstAttribute="width" secondItem="Xoe-gW-QEA" secondAttribute="width" id="FIG-dS-qIF"/>
+                        </constraints>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8B0-5D-DbF" userLabel="Horizontal Divider View">
+                        <rect key="frame" x="162" y="135" width="158" height="4"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="4" id="lMW-ol-4Um"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uGP-QS-XNe" userLabel="Cell Divider View">
+                        <rect key="frame" x="0.0" y="139" width="320" height="4"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="4" id="ik7-S1-10V"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="8B0-5D-DbF" secondAttribute="trailing" id="9rt-ba-Kxy"/>
+                    <constraint firstItem="uGP-QS-XNe" firstAttribute="top" secondItem="8B0-5D-DbF" secondAttribute="bottom" id="K7F-cs-gEA"/>
+                    <constraint firstAttribute="bottom" secondItem="U5D-ez-UlH" secondAttribute="bottom" constant="4" id="Xi3-3p-esH"/>
+                    <constraint firstAttribute="bottom" secondItem="uGP-QS-XNe" secondAttribute="bottom" id="bNM-Ow-ovI"/>
+                    <constraint firstAttribute="trailing" secondItem="uGP-QS-XNe" secondAttribute="trailing" id="gbf-9N-dfh"/>
+                    <constraint firstAttribute="trailing" secondItem="U5D-ez-UlH" secondAttribute="trailing" id="h8D-ff-AUb"/>
+                    <constraint firstItem="uGP-QS-XNe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ing-ke-2Bt"/>
+                    <constraint firstItem="8B0-5D-DbF" firstAttribute="leading" secondItem="rbt-L2-WYr" secondAttribute="trailing" id="kJW-uY-26A"/>
+                    <constraint firstItem="U5D-ez-UlH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="t4K-eI-N9o"/>
+                    <constraint firstItem="U5D-ez-UlH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="yZI-dN-Cg9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellDividerView" destination="uGP-QS-XNe" id="WaA-GA-hhw"/>
+                <outlet property="dishesCountLabel" destination="FqB-vm-9uk" id="UWP-nm-99e"/>
+                <outlet property="horizontalDividerView" destination="8B0-5D-DbF" id="nSt-pi-wne"/>
+                <outlet property="priceLabel" destination="Xoe-gW-QEA" id="tOY-b3-iWG"/>
+                <outlet property="verticalDividerView" destination="rbt-L2-WYr" id="CKD-u7-CKl"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="177.12053571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

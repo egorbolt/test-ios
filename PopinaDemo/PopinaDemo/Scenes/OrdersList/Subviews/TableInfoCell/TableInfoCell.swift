@@ -20,7 +20,7 @@ struct TableInfoCellModel {
         table = order.table
         guests = order.guests
         date = "18:20"
-        price = String(order.items.map { $0.price }.reduce(0, +)) + order.items[0].currency
+        price = order.totalPrice
     }
 }
 
@@ -34,6 +34,9 @@ class TableInfoCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         contentView.tintColor = .red
+        backgroundColor = UIColor(hex: "#F7F8F9")
+        contentView.backgroundColor = .white
+        contentView.layer.cornerRadius = 10
     }
     
     override func layoutSubviews() {
@@ -42,16 +45,10 @@ class TableInfoCell: UITableViewCell {
         contentView.frame = contentView.frame.inset(
             by: UIEdgeInsets(top: 0, left: 10, bottom: 5, right: 10)
         )
-        backgroundColor = UIColor(hex: "#F7F8F9")
-        contentView.backgroundColor = .white
-        contentView.layer.cornerRadius = 10
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
     }
 }
+
+// MARK: - Configuration
 
 extension TableInfoCell {
     func configure(with model: TableInfoCellModel) {

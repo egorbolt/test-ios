@@ -24,4 +24,8 @@ struct Order: Codable {
         case date
         case items
     }
+    
+    var totalPrice: String {
+        String(items.map { $0.price }.reduce(0, +)) + " \(items[0].currency)"
+    }
 }
