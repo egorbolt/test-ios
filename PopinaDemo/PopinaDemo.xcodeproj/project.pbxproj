@@ -23,9 +23,6 @@
 		236BC6AB2744B1CC003D9013 /* OrdersList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 236BC6A92744B1CC003D9013 /* OrdersList.storyboard */; };
 		236BC6AD2744B1CE003D9013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 236BC6AC2744B1CE003D9013 /* Assets.xcassets */; };
 		236BC6B02744B1CE003D9013 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 236BC6AE2744B1CE003D9013 /* LaunchScreen.storyboard */; };
-		236BC6BC2744B49E003D9013 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236BC6BB2744B49E003D9013 /* Dish.swift */; };
-		236BC6BE2744B4C5003D9013 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236BC6BD2744B4C5003D9013 /* Order.swift */; };
-		236BC6C02744B4F2003D9013 /* Till.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236BC6BF2744B4F2003D9013 /* Till.swift */; };
 		236BC6C42744B5A5003D9013 /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236BC6C32744B5A5003D9013 /* UIColorExt.swift */; };
 		236BC6D32744D20E003D9013 /* TableInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236BC6D12744D20E003D9013 /* TableInfoCell.swift */; };
 		236BC6D42744D20E003D9013 /* TableInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 236BC6D22744D20E003D9013 /* TableInfoCell.xib */; };
@@ -50,9 +47,6 @@
 		236BC6AC2744B1CE003D9013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		236BC6AF2744B1CE003D9013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		236BC6B12744B1CE003D9013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		236BC6BB2744B49E003D9013 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
-		236BC6BD2744B4C5003D9013 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
-		236BC6BF2744B4F2003D9013 /* Till.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Till.swift; sourceTree = "<group>"; };
 		236BC6C32744B5A5003D9013 /* UIColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
 		236BC6D12744D20E003D9013 /* TableInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableInfoCell.swift; sourceTree = "<group>"; };
 		236BC6D22744D20E003D9013 /* TableInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableInfoCell.xib; sourceTree = "<group>"; };
@@ -130,21 +124,10 @@
 				236BC6A52744B1CC003D9013 /* SceneDelegate.swift */,
 				236BC6C12744B57B003D9013 /* Common */,
 				2363F19527462234006B7B19 /* Domain */,
-				236BC6BA2744B3F9003D9013 /* Models */,
 				2363F19827462653006B7B19 /* Resources */,
 				236BC6C92744CDDD003D9013 /* Scenes */,
 			);
 			path = PopinaDemo;
-			sourceTree = "<group>";
-		};
-		236BC6BA2744B3F9003D9013 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				236BC6BB2744B49E003D9013 /* Dish.swift */,
-				236BC6BD2744B4C5003D9013 /* Order.swift */,
-				236BC6BF2744B4F2003D9013 /* Till.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		236BC6C12744B57B003D9013 /* Common */ = {
@@ -293,20 +276,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				236BC6BE2744B4C5003D9013 /* Order.swift in Sources */,
 				236BC6C42744B5A5003D9013 /* UIColorExt.swift in Sources */,
 				2363F1972746223C006B7B19 /* AlertAction.swift in Sources */,
 				2363F19427462210006B7B19 /* UIWindowExt.swift in Sources */,
 				236BC6A82744B1CC003D9013 /* OrdersListViewController.swift in Sources */,
 				2363F18A2745484C006B7B19 /* DishCell.swift in Sources */,
-				236BC6C02744B4F2003D9013 /* Till.swift in Sources */,
 				2363F19227461FB8006B7B19 /* TableInfoCellModel.swift in Sources */,
 				236BC6A42744B1CC003D9013 /* AppDelegate.swift in Sources */,
 				2363F18E2745485C006B7B19 /* GeneralInfoCell.swift in Sources */,
 				236BC6A62744B1CC003D9013 /* SceneDelegate.swift in Sources */,
 				2363F18227451E3D006B7B19 /* DetailedOrderViewController.swift in Sources */,
 				236BC6D32744D20E003D9013 /* TableInfoCell.swift in Sources */,
-				236BC6BC2744B49E003D9013 /* Dish.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

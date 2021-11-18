@@ -5,6 +5,8 @@
 //  Created by Egor Boldyrev on 18.11.2021.
 //
 
+import DataAPILayer
+
 struct TableInfoCellModel {
     let id: Int
     let table: String
