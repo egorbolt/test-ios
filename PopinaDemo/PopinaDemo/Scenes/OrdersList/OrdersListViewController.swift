@@ -13,7 +13,6 @@ import DataAPILayer
 private struct Constants {
     let tableViewBackColor = UIColor(hex: "#F7F8F9")
     
-    let dataURL = "https://raw.githubusercontent.com/popina/test-ios/master/data.json"
     let okAction = "OK"
     let error = "Error"
 }
@@ -103,7 +102,7 @@ private extension OrdersListViewController {
         if let appDelegate = UIApplication.shared.delegate as? AppDelegate,
            let dataModel = appDelegate.dataModel
         {
-            dataModel.makeDataModel()  { result in
+            dataModel.makeDataModel() { result in
                 DispatchQueue.main.async { [weak self] in
                     switch result {
                     case let .failure(error):
