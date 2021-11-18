@@ -14,7 +14,6 @@
 		2363F18E2745485C006B7B19 /* GeneralInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2363F18C2745485C006B7B19 /* GeneralInfoCell.swift */; };
 		2363F18F2745485C006B7B19 /* GeneralInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2363F18D2745485C006B7B19 /* GeneralInfoCell.xib */; };
 		2363F19227461FB8006B7B19 /* TableInfoCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2363F19127461FB7006B7B19 /* TableInfoCellModel.swift */; };
-		2363F19427462210006B7B19 /* UIWindowExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2363F19327462210006B7B19 /* UIWindowExt.swift */; };
 		2363F1972746223C006B7B19 /* AlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2363F1962746223C006B7B19 /* AlertAction.swift */; };
 		2363F19C27462A16006B7B19 /* DataAPILayer in Frameworks */ = {isa = PBXBuildFile; productRef = 2363F19B27462A16006B7B19 /* DataAPILayer */; };
 		236BC6A42744B1CC003D9013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236BC6A32744B1CC003D9013 /* AppDelegate.swift */; };
@@ -37,7 +36,6 @@
 		2363F18D2745485C006B7B19 /* GeneralInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralInfoCell.xib; sourceTree = "<group>"; };
 		2363F19027461988006B7B19 /* JDCPopinaDemoInHouse.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = JDCPopinaDemoInHouse.mobileprovision; sourceTree = "<group>"; };
 		2363F19127461FB7006B7B19 /* TableInfoCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableInfoCellModel.swift; sourceTree = "<group>"; };
-		2363F19327462210006B7B19 /* UIWindowExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowExt.swift; sourceTree = "<group>"; };
 		2363F1962746223C006B7B19 /* AlertAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertAction.swift; sourceTree = "<group>"; };
 		236BC6A02744B1CC003D9013 /* PopinaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopinaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		236BC6A32744B1CC003D9013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -142,7 +140,6 @@
 			isa = PBXGroup;
 			children = (
 				236BC6C32744B5A5003D9013 /* UIColorExt.swift */,
-				2363F19327462210006B7B19 /* UIWindowExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -278,7 +275,6 @@
 			files = (
 				236BC6C42744B5A5003D9013 /* UIColorExt.swift in Sources */,
 				2363F1972746223C006B7B19 /* AlertAction.swift in Sources */,
-				2363F19427462210006B7B19 /* UIWindowExt.swift in Sources */,
 				236BC6A82744B1CC003D9013 /* OrdersListViewController.swift in Sources */,
 				2363F18A2745484C006B7B19 /* DishCell.swift in Sources */,
 				2363F19227461FB8006B7B19 /* TableInfoCellModel.swift in Sources */,

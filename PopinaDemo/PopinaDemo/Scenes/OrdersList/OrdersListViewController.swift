@@ -27,7 +27,7 @@ final class OrdersListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViewController()
-        performNetworkRequest()
+        makeContent()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -99,25 +99,32 @@ extension OrdersListViewController: UITableViewDelegate {
 // MARK: - Network
 
 private extension OrdersListViewController {
-    func performNetworkRequest() {        
-        let dataModel = DataModel()
-        dataModel.makeDataModel()  { result in
-            DispatchQueue.main.async { [weak self] in
-                switch result {
-                case let .failure(error):
-                    self?.showGeneralErrorAlert(message: error.localizedDescription)
-                    
-                case let .success(till):
-                    self?.orders = till.orders
-                    self?.navigationItem.title = "\(till.orders.count) commandes"
-                    self?.tableView.reloadData()
+    func makeContent() {
+        if let appDelegate = UIApplication.shared.delegate as? AppDelegate,
+           let dataModel = appDelegate.dataModel
+        {
+            dataModel.makeDataModel()  { result in
+                DispatchQueue.main.async { [weak self] in
+                    switch result {
+                    case let .failure(error):
+                        self?.showGeneralErrorAlert(message: error.localizedDescription)
+                        
+                    case let .success(till):
+                        self?.orders = till.orders
+                        self?.navigationItem.title = "\(till.orders.count) commandes"
+                        self?.tableView.reloadData()
+                    }
                 }
             }
+        } else {
+            showGeneralErrorAlert(message: "Something wrong happened.")
         }
     }
     
     func showGeneralErrorAlert(message: String) {
-        let ok = AlertAction(title: consts.okAction)
-        UIWindow.showAlert(title: consts.error, message: message, actions: [ok])
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: consts.okAction, style: .default)
+        alert.addAction(action)
+        present(alert, animated: true)
     }
 }
