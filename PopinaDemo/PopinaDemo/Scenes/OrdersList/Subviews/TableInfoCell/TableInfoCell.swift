@@ -7,22 +7,11 @@
 
 import UIKit
 
-
-struct TableInfoCellModel {
-    let id: Int
-    let table: String
-    let guests: Int
-    let date: String
-    let price: String
-    
-    init(order: Order) {
-        id = order.id
-        table = order.table
-        guests = order.guests
-        date = "18:20"
-        price = order.totalPrice
-    }
+private struct Constants {
+    let tableViewBackColor = UIColor(hex: "#F7F8F9")
+    let tableNumberBackViewColor = UIColor.init(hex: "#D96A69")
 }
+private let consts = Constants()
 
 class TableInfoCell: UITableViewCell {
     @IBOutlet var tableNumberBackView: UIView!
@@ -31,19 +20,22 @@ class TableInfoCell: UITableViewCell {
     @IBOutlet var dateLabel: UILabel!
     @IBOutlet var priceLabel: UILabel!
     
+    static let cellIdentifier = "TableInfoCell"
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         contentView.tintColor = .red
-        backgroundColor = UIColor(hex: "#F7F8F9")
+        backgroundColor = consts.tableViewBackColor
         contentView.backgroundColor = .white
         contentView.layer.cornerRadius = 10
+        selectionStyle = .none
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
         tableNumberBackView.layer.cornerRadius = 10
         contentView.frame = contentView.frame.inset(
-            by: UIEdgeInsets(top: 0, left: 10, bottom: 5, right: 10)
+            by: UIEdgeInsets(top: 5, left: 10, bottom: 0, right: 10)
         )
     }
 }
@@ -52,14 +44,19 @@ class TableInfoCell: UITableViewCell {
 
 extension TableInfoCell {
     func configure(with model: TableInfoCellModel) {
-        tableNumberBackView.backgroundColor = UIColor.init(hex: "#D96A69")
+        tableNumberBackView.backgroundColor = consts.tableNumberBackViewColor
         
         tableNumberLabel.text = model.table
         tableNumberLabel.font = UIFont.systemFont(ofSize: 24, weight: .bold)
         tableNumberLabel.textColor = .white
         
-        guestsLabel.text = String(model.guests)
-        dateLabel.text = "Some date here"
+        guestsLabel.text = "🙂 " + String(model.guests)
+        guestsLabel.font = UIFont.systemFont(ofSize: 16, weight: .medium)
+        
+        dateLabel.text = model.date
+        dateLabel.font = UIFont.systemFont(ofSize: 16, weight: .medium)
+        
         priceLabel.text = model.price
+        priceLabel.font = UIFont.systemFont(ofSize: 24, weight: .bold)
     }
 }

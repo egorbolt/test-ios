@@ -12,7 +12,6 @@
         <!--Navigation Controller-->
         <scene sceneID="xfd-He-p04">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wNl-IK-cAH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="0IL-r8-Uh0" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EDN-gu-0Kr">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -22,13 +21,13 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="FHS-Zz-maA"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wNl-IK-cAH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2152" y="118"/>
         </scene>
         <!--Orders List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="OrdersListViewController" customModule="PopinaDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -53,6 +52,7 @@
                         <outlet property="tableView" destination="fTb-s3-mti" id="qd1-hi-OHp"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-307" y="115"/>
         </scene>

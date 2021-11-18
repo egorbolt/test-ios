@@ -13,6 +13,9 @@
 		2363F18B2745484C006B7B19 /* DishCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2363F1892745484C006B7B19 /* DishCell.xib */; };
 		2363F18E2745485C006B7B19 /* GeneralInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2363F18C2745485C006B7B19 /* GeneralInfoCell.swift */; };
 		2363F18F2745485C006B7B19 /* GeneralInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2363F18D2745485C006B7B19 /* GeneralInfoCell.xib */; };
+		2363F19227461FB8006B7B19 /* TableInfoCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2363F19127461FB7006B7B19 /* TableInfoCellModel.swift */; };
+		2363F19427462210006B7B19 /* UIWindowExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2363F19327462210006B7B19 /* UIWindowExt.swift */; };
+		2363F1972746223C006B7B19 /* AlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2363F1962746223C006B7B19 /* AlertAction.swift */; };
 		236BC6A42744B1CC003D9013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236BC6A32744B1CC003D9013 /* AppDelegate.swift */; };
 		236BC6A62744B1CC003D9013 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236BC6A52744B1CC003D9013 /* SceneDelegate.swift */; };
 		236BC6A82744B1CC003D9013 /* OrdersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236BC6A72744B1CC003D9013 /* OrdersListViewController.swift */; };
@@ -28,7 +31,6 @@
 		236BC6C82744BAAD003D9013 /* DataAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236BC6C72744BAAD003D9013 /* DataAPIError.swift */; };
 		236BC6D32744D20E003D9013 /* TableInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236BC6D12744D20E003D9013 /* TableInfoCell.swift */; };
 		236BC6D42744D20E003D9013 /* TableInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 236BC6D22744D20E003D9013 /* TableInfoCell.xib */; };
-		236BC6D72744DA2A003D9013 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236BC6D62744DA2A003D9013 /* DataStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,10 @@
 		2363F1892745484C006B7B19 /* DishCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishCell.xib; sourceTree = "<group>"; };
 		2363F18C2745485C006B7B19 /* GeneralInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralInfoCell.swift; sourceTree = "<group>"; };
 		2363F18D2745485C006B7B19 /* GeneralInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralInfoCell.xib; sourceTree = "<group>"; };
+		2363F19027461988006B7B19 /* JDCPopinaDemoInHouse.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = JDCPopinaDemoInHouse.mobileprovision; sourceTree = "<group>"; };
+		2363F19127461FB7006B7B19 /* TableInfoCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableInfoCellModel.swift; sourceTree = "<group>"; };
+		2363F19327462210006B7B19 /* UIWindowExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowExt.swift; sourceTree = "<group>"; };
+		2363F1962746223C006B7B19 /* AlertAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertAction.swift; sourceTree = "<group>"; };
 		236BC6A02744B1CC003D9013 /* PopinaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopinaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		236BC6A32744B1CC003D9013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		236BC6A52744B1CC003D9013 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,7 +61,6 @@
 		236BC6C72744BAAD003D9013 /* DataAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAPIError.swift; sourceTree = "<group>"; };
 		236BC6D12744D20E003D9013 /* TableInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableInfoCell.swift; sourceTree = "<group>"; };
 		236BC6D22744D20E003D9013 /* TableInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableInfoCell.xib; sourceTree = "<group>"; };
-		236BC6D62744DA2A003D9013 /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +92,14 @@
 			path = DishCell;
 			sourceTree = "<group>";
 		};
+		2363F19527462234006B7B19 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				2363F1962746223C006B7B19 /* AlertAction.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
 		236BC6972744B1CC003D9013 = {
 			isa = PBXGroup;
 			children = (
@@ -106,12 +119,13 @@
 		236BC6A22744B1CC003D9013 /* PopinaDemo */ = {
 			isa = PBXGroup;
 			children = (
-				236BC6D52744DA1B003D9013 /* Services */,
+				2363F19027461988006B7B19 /* JDCPopinaDemoInHouse.mobileprovision */,
 				236BC6B12744B1CE003D9013 /* Info.plist */,
 				236BC6A32744B1CC003D9013 /* AppDelegate.swift */,
 				236BC6A52744B1CC003D9013 /* SceneDelegate.swift */,
 				236BC6AC2744B1CE003D9013 /* Assets.xcassets */,
 				236BC6C12744B57B003D9013 /* Common */,
+				2363F19527462234006B7B19 /* Domain */,
 				236BC6AE2744B1CE003D9013 /* LaunchScreen.storyboard */,
 				236BC6BA2744B3F9003D9013 /* Models */,
 				236BC6B72744B252003D9013 /* Network */,
@@ -152,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				236BC6C32744B5A5003D9013 /* UIColorExt.swift */,
+				2363F19327462210006B7B19 /* UIWindowExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -187,17 +202,10 @@
 			isa = PBXGroup;
 			children = (
 				236BC6D12744D20E003D9013 /* TableInfoCell.swift */,
+				2363F19127461FB7006B7B19 /* TableInfoCellModel.swift */,
 				236BC6D22744D20E003D9013 /* TableInfoCell.xib */,
 			);
 			path = TableInfoCell;
-			sourceTree = "<group>";
-		};
-		236BC6D52744DA1B003D9013 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				236BC6D62744DA2A003D9013 /* DataStorage.swift */,
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		236BC6D827450CB8003D9013 /* DetailedOrder */ = {
@@ -288,12 +296,14 @@
 			files = (
 				236BC6BE2744B4C5003D9013 /* Order.swift in Sources */,
 				236BC6C42744B5A5003D9013 /* UIColorExt.swift in Sources */,
+				2363F1972746223C006B7B19 /* AlertAction.swift in Sources */,
 				236BC6B92744B26A003D9013 /* DataAPI.swift in Sources */,
-				236BC6D72744DA2A003D9013 /* DataStorage.swift in Sources */,
+				2363F19427462210006B7B19 /* UIWindowExt.swift in Sources */,
 				236BC6A82744B1CC003D9013 /* OrdersListViewController.swift in Sources */,
 				2363F18A2745484C006B7B19 /* DishCell.swift in Sources */,
 				236BC6C02744B4F2003D9013 /* Till.swift in Sources */,
 				236BC6C82744BAAD003D9013 /* DataAPIError.swift in Sources */,
+				2363F19227461FB8006B7B19 /* TableInfoCellModel.swift in Sources */,
 				236BC6C62744BA9B003D9013 /* HTTPMethod.swift in Sources */,
 				236BC6A42744B1CC003D9013 /* AppDelegate.swift in Sources */,
 				2363F18E2745485C006B7B19 /* GeneralInfoCell.swift in Sources */,

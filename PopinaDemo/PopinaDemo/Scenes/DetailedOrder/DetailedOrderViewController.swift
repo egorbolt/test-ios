@@ -7,20 +7,16 @@
 
 import UIKit
 
+// MARK: - DetailedOrderViewController
 
-enum DetailedOrderCellType {
-    case generalInfo(Order)
-    case dish(Dish)
-}
-
-class DetailedOrderViewController: UIViewController {
+final class DetailedOrderViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     
     private var tableStructure: [DetailedOrderCellType] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureTableView()
+        configureViewController()
     }
     
     func configure(with order: Order) {
@@ -33,7 +29,7 @@ class DetailedOrderViewController: UIViewController {
     }
 }
 
-// MARK: - Configuration
+// MARK: - VC Configuration
 
 private extension DetailedOrderViewController {
     func configureViewController() {
@@ -48,6 +44,7 @@ private extension DetailedOrderViewController {
     func configureTableView() {
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.allowsSelection = false
         tableView.backgroundColor = .white
         tableView.separatorStyle = .none
         tableView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -57,12 +54,12 @@ private extension DetailedOrderViewController {
     
     func registerTableViewCells() {
         tableView.register(
-            UINib(nibName: "GeneralInfoCell", bundle: nil),
-            forCellReuseIdentifier: "GeneralInfoCell"
+            UINib(nibName: GeneralInfoCell.cellIdentifier, bundle: nil),
+            forCellReuseIdentifier: GeneralInfoCell.cellIdentifier
         )
         tableView.register(
-            UINib(nibName: "DishCell", bundle: nil),
-            forCellReuseIdentifier: "DishCell"
+            UINib(nibName: DishCell.cellIdentifier, bundle: nil),
+            forCellReuseIdentifier: DishCell.cellIdentifier
         )
     }
 }
@@ -75,6 +72,8 @@ extension DetailedOrderViewController: UITableViewDelegate {
     }
 }
 
+// MARK: - UITableViewDataSource
+
 extension DetailedOrderViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         tableStructure.count
@@ -84,7 +83,7 @@ extension DetailedOrderViewController: UITableViewDataSource {
         switch tableStructure[indexPath.row] {
         case let .dish(dish):
             if let cell = tableView.dequeueReusableCell(
-                withIdentifier: "DishCell"
+                withIdentifier: DishCell.cellIdentifier
             ) as? DishCell {
                 cell.configure(with: dish)
                 return cell
@@ -94,7 +93,7 @@ extension DetailedOrderViewController: UITableViewDataSource {
             
         case let .generalInfo(order):
             if let cell = tableView.dequeueReusableCell(
-                withIdentifier: "GeneralInfoCell"
+                withIdentifier: GeneralInfoCell.cellIdentifier
             ) as? GeneralInfoCell {
                 cell.configure(with: order)
                 return cell
@@ -103,4 +102,11 @@ extension DetailedOrderViewController: UITableViewDataSource {
             }
         }
     }
+}
+
+// MARK: - DetailedOrderCellType
+
+enum DetailedOrderCellType {
+    case generalInfo(Order)
+    case dish(Dish)
 }

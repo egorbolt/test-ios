@@ -7,22 +7,15 @@
 
 import UIKit
 
-class DishCell: UITableViewCell {
-    @IBOutlet var dishCountView: UIView!
-    @IBOutlet var dishCountLabel: UILabel!
-    @IBOutlet var dishNameLabel: UILabel!
-    @IBOutlet var dishPriceLabel: UILabel!
+// MARK: - DishCell
+
+final class DishCell: UITableViewCell {
+    @IBOutlet private var dishCountView: UIView!
+    @IBOutlet private var dishCountLabel: UILabel!
+    @IBOutlet private var dishNameLabel: UILabel!
+    @IBOutlet private var dishPriceLabel: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+    static let cellIdentifier = "DishCell"
 }
 
 // MARK: - Configuration
