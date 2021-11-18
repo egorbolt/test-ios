@@ -99,11 +99,9 @@ extension OrdersListViewController: UITableViewDelegate {
 // MARK: - Network
 
 private extension OrdersListViewController {
-    func performNetworkRequest() {
-        let api = DataAPI(
-            initialURL: consts.dataURL
-        )
-        api.getData(of: Till.self, httpMethod: .get) { result in
+    func performNetworkRequest() {        
+        let dataModel = DataModel()
+        dataModel.makeDataModel()  { result in
             DispatchQueue.main.async { [weak self] in
                 switch result {
                 case let .failure(error):
